@@ -1,6 +1,6 @@
 {
   "name": "express-zod-validator",
-  "version": "1.0.",
+  "version": "1.0.1",
   "description": "A TypeScript-first Express middleware for request validation using Zod.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
