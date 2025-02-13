@@ -1,0 +1,22 @@
+{
+  "name": "express-zod-validator",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "start": "bun run build/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.0",
+    "express": "^5.0.1",
+    "http-status-codes": "^2.3.0",
+    "tsup": "^8.3.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  }
+}
