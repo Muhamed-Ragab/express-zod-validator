@@ -1,22 +1,43 @@
 {
   "name": "express-zod-validator",
-  "module": "index.ts",
+  "version": "1.0.",
+  "description": "A TypeScript-first Express middleware for request validation using Zod.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsup",
-    "start": "bun run build/index.js"
+    "start": "bun run build/index.js",
+    "prepublishOnly": "bun run build"
   },
+  "files": [
+    "build"
+  ],
   "devDependencies": {
     "@types/bun": "latest",
     "@types/express": "^5.0.0",
-    "express": "^5.0.1",
-    "http-status-codes": "^2.3.0",
     "tsup": "^8.3.6"
   },
   "peerDependencies": {
+    "express": "^5.0.1",
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "zod": "^3.24.2"
-  }
+    "zod": "^3.24.2",
+    "http-status-codes": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Muhamed-Ragab/express-zod-validator.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "validation",
+    "typescript",
+    "zod",
+    "express-v5"
+  ],
+  "author": "Mohamed Ragab Saad",
+  "license": "MIT"
 }
